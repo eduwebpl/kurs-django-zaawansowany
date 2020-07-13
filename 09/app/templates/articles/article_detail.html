@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+  <a href="{% url "article-list" %}">Wróć do listy</a>
+  <h2>{{ article.title }}</h2>
+  <p>{{ article.content }}</p>
+{% endblock %}
