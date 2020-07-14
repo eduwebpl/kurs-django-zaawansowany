@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Lista artykułów</h2>
+  <form action="{% url "article-list" %}">
+    <div class="row">
+      <div class="column">
+        <input class="visible-lg-inline-block" type="text" name="q" value="{{ request.GET.q }}" placeholder="wpisz frazę">
+      </div>
+      <div class="column">
+        <input type="submit" value="Wyszukaj">
+      </div>
+    </div>
+  </form>
+  <h3>Szukaj: {% if request.GET.q %}{{ request.GET.q }}{% endif %}</h3>
+  <ul>
+    {% for article in article_list %}
+      <li><a href="{% url "article-detail" pk=article.pk %}">{{ article.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
