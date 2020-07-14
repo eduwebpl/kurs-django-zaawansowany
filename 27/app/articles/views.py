@@ -14,11 +14,7 @@ class ArticleListView(ListView):
     def filter_queryset(self, queryset):
         query = self.request.GET.get('q')
         if query:
-            words = query.split(" ")
-            q_object = Q()
-            for word in words:
-                q_object.add(Q(title__icontains=word), Q.OR)
-            queryset = queryset.filter(q_object)
+            queryset = queryset.filter(title__search=query)
         return queryset
 
 
