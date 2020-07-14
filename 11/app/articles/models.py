@@ -15,9 +15,5 @@ class Article(models.Model):
     author = models.ForeignKey("Author", on_delete=models.CASCADE, null=True)
     tags = models.ManyToManyField("ArticleTag")
 
-    class Meta:
-        verbose_name = "Artykuł"
-        verbose_name_plural = "Artykuły"
-
     def __str__(self):
         return self.title
