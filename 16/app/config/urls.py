@@ -24,3 +24,9 @@ urlpatterns = [
     path('artykuly/', ArticleListView.as_view(), name="article-list"),
     path('artykuly/<int:pk>/', ArticleDetailView.as_view(), name="article-detail"),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
