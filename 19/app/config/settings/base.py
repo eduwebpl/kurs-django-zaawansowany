@@ -126,5 +126,5 @@ MEDIA_ROOT = env("MEDIA_ROOT", default=DEFAULT_MEDIA_ROOT)
 
 # Cache configuration
 CACHES = {
-    'default': env.cache(default="dummycache://"),
+    'default': env.cache(default="dummycache://")
 }
