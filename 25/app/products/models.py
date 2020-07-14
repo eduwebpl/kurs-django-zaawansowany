@@ -8,9 +8,6 @@ class Product(models.Model):
     def __str__(self):
         return f"Produkt {self.title} ${self.price}"
 
-    class Meta:
-        abstract = True
-
 
 class Ebook(Product):
     url_toc = models.URLField()
