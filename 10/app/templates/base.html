@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css">
+</head>
+<body>
+<div class="content">
+  <div class="header">
+    <img class="logo" src="{% static "logo.jpg" %}" alt=""><h1 class="title">Kurs Zaawansowane Django</h1>
+  </div>
+  <hr>
+  {% block content %}{% endblock %}
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 768px;
+  margin: 40px auto 0;
+}
+
+.logo {
+  height: 36px;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+
+.title {
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 26px;
+  display: inline-block;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+</style>
+</body>
+</html>
