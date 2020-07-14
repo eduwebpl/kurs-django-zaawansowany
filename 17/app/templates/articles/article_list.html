@@ -3,7 +3,10 @@
   <h2>Lista artykułów</h2>
   <ul>
     {% for article in article_list %}
-      <li><a href="{% url "article-detail" pk=article.pk %}">{{ article.title }} <small>{{ article.author.name }}</small></a></li>
+      <li><a href="{% url "article-detail" pk=article.pk %}">{{ article.title }}
+          <small>{{ article.author.name }}</small><br>
+          {% for tag in article.tags.all %}{{ tag.name }} {% endfor %}
+      </a></li>
     {% endfor %}
   </ul>
 {% endblock %}
