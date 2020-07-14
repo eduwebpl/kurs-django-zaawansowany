@@ -1,5 +1,8 @@
+import pytest
+from rest_framework.exceptions import ValidationError
+
 from articles.models import ArticleTag, Author, Article
-from articles.serializers import ArticleSerializer
+from articles.serializers import ArticleSerializer, ColorField
 
 
 def test_article_create_by_serializer():
@@ -26,3 +29,16 @@ def test_article_representation():
     serializer = ArticleSerializer(article)
 
     print()
+
+
+def test_color_field_validation():
+    color_field = ColorField()
+    with pytest.raises(ValidationError):
+        color_field.run_validation("abc")
+    color_field.run_validation("#ffffff")
+
+
+def test_uppercase_color():
+    color_field = ColorField()
+    data = color_field.to_internal_value("#ffffff")
+    assert data == "#FFFFFF"
