@@ -9,7 +9,7 @@ from articles.models import Article
 class ArticleListView(ListView):
     queryset = Article.objects.all()
 
-    @method_decorator(cache_page(60))
+    @method_decorator(cache_page(240))
     @method_decorator(vary_on_headers('User-Agent'))
     @method_decorator(vary_on_cookie)
     def dispatch(self, request, *args, **kwargs):

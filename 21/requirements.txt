@@ -1,7 +1,0 @@
-Django===3.0.8
-django-environ==0.4.5
-django-debug-toolbar==2.2
-Faker==4.1.1
-django-bakery
-django-debug-toolbar
-django-redis
