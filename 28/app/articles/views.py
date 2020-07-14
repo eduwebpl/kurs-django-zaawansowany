@@ -1,3 +1,4 @@
+from django.contrib.postgres.search import TrigramSimilarity
 from django.views.generic import ListView, DetailView
 
 from articles.models import Article
@@ -13,7 +14,8 @@ class ArticleListView(ListView):
     def filter_queryset(self, queryset):
         query = self.request.GET.get('q')
         if query:
-            queryset = queryset.filter(title__search=query)
+            similarity = TrigramSimilarity('title', query)
+            queryset = queryset.annotate(similarity=similarity)
         return queryset
 
 
