@@ -1,0 +1,34 @@
+[
+  {
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+      "title": "Zielona herbata pochodzi z Chin",
+      "content": "Zielona herbata \u2013 nap\u00f3j przyrz\u0105dzany wy\u0142\u0105cznie z li\u015bci herbaty chi\u0144skiej (Camellia sinensis), kt\u00f3re poddane zosta\u0142y w czasie przetwarzania jedynie minimalnej oksydacji. Zielona herbata pochodzi z Chin, sk\u0105d rozpowszechni\u0142a si\u0119 na inne kraje Azji, od Japonii po Bliski Wsch\u00f3d.\r\n\r\nWsp\u00f3\u0142cze\u015bnie zielona herbata rozprzestrzenia si\u0119 na Zachodzie, gdzie wci\u0105\u017c najpopularniejszym rodzajem tego napoju jest herbata czarna. W krajach, gdzie uprawia si\u0119 herbat\u0119, wytwarza si\u0119 wiele rodzaj\u00f3w zielonej herbaty. R\u00f3\u017cni\u0105 si\u0119 od siebie z uwagi na specyficzne warunki uprawy, spos\u00f3b przetwarzania i por\u0119 zbior\u00f3w."
+    }
+  },
+  {
+    "model": "articles.article",
+    "pk": 2,
+    "fields": {
+      "title": "Mleko",
+      "content": "Mleko \u2013 wydzielina gruczo\u0142u mlekowego samic ssak\u00f3w, pojawiaj\u0105ca si\u0119 w okresie laktacji. Jako produkt \u017cywno\u015bciowy dla cz\u0142owieka najcz\u0119stsze zastosowanie ma mleko krowie.\r\n\r\nMleko jest mieszanin\u0105 wielosk\u0142adnikow\u0105, sk\u0142adaj\u0105ca si\u0119 z trzech podstawowych faz, b\u0119d\u0105cych w \u015bcis\u0142ej zale\u017cno\u015bci od siebie:\r\n\r\nemulsyjnej\r\nkoloidalnej\r\nmolekularnej.\r\nMlekiem zwyczajowo nazywane s\u0105 tak\u017ce produkty o konsystencji przypominaj\u0105cej mleko odzwierz\u0119ce (cho\u0107 niekoniecznie o przeznaczeniu konsumpcyjnym), takie jak mleko sojowe, ry\u017cowe czy kauczukowe."
+    }
+  },
+  {
+    "model": "articles.article",
+    "pk": 3,
+    "fields": {
+      "title": "Herbata czarna",
+      "content": "Herbata \u2013 napar przyrz\u0105dzany z li\u015bci i p\u0105k\u00f3w grupy ro\u015blin, nazywanych t\u0105 sam\u0105 nazw\u0105, nale\u017c\u0105cych do rodzaju kamelia (Camellia). Ro\u015bliny te s\u0105 do siebie podobne, traktowane jako odr\u0119bne gatunki lub odmiany jednego gatunku \u2013 herbaty chi\u0144skiej (Camellia sinensis). Dawniej zaliczano je do rodzaju Thea, r\u00f3\u017cni\u0105 si\u0119 od innych kamelii zawarto\u015bci\u0105 substancji swoistych i kilkoma drobnymi cechami morfologicznymi[1]. W Chinach zapisuje si\u0119 j\u0105 znakiem \u8336, kt\u00f3ry jest jednak r\u00f3\u017cnie czytany w zale\u017cno\u015bci od dialektu: t\u00ea \u2013 dialekt hokkien (czego odmiany s\u0105 cz\u0119sto obecne w j\u0119zykach zachodniej Europy) oraz ch\u00e1, w dialekcie kanto\u0144skim i mandary\u0144skim (z odmianami tej wymowy popularnymi na wschodzie \u2013 Indie, Iran, Turcja, Rosja, Czechy). Polska nazwa herbata to zbitka pochodz\u0105ca od \u0142ac. herba thea (gdzie pierwszy wyraz herba oznacza \u201ezio\u0142o\u201d, a drugi \u2013 thea \u2013 jest zlatynizowan\u0105 postaci\u0105 chi\u0144skiej nazwy tej\u017ce ro\u015bliny[2]).\r\n\r\nNazw\u0105 herbata okre\u015bla si\u0119 r\u00f3wnie\u017c napary z r\u00f3\u017cnych zi\u00f3\u0142, suszu owocowego[3][4], dlatego w u\u017cyciu s\u0105 okre\u015blenia: lipowa, mi\u0119towa, rumiankowa itp. herbata, herbata z malin, dzikiej r\u00f3\u017cy, bzu czarnego itp., herbata paragwajska, Rooibos."
+    }
+  },
+  {
+    "model": "articles.article",
+    "pk": 4,
+    "fields": {
+      "title": "Artyku\u0142 o li\u015bciach herbaty",
+      "content": "Smak i aromat herbaty w du\u017cym stopniu zale\u017cy od warunk\u00f3w, w jakich ona dojrzewa\u0142a oraz sposobu jej p\u00f3\u017aniejszej obr\u00f3bki. Herbata uprawiana jest mi\u0119dzy zwrotnikiem Raka i Kozioro\u017cca, g\u0142\u00f3wnie w po\u0142udniowej i po\u0142udniowo \u2013wschodniej cz\u0119\u015bci Azji. Najlepiej ro\u015bnie w klimacie ciep\u0142ym, \u0142agodnym z regularnymi opadami, sprzyjaj\u0105cy jest klimat monsunowy odznaczaj\u0105cy si\u0119 du\u017cym nas\u0142onecznieniem i wysokimi sumami opad\u00f3w. Herbata swoje optimum osi\u0105ga na obszarach o \u015brednich rocznych temperaturach od 10 do 30\u00b0C. Wysoko\u015b\u0107 jej upraw najcz\u0119\u015bciej si\u0119ga do 2400m n.p.m., krzewy uprawiane w wy\u017cszych partiach ze wzgl\u0119du na ch\u0142odniejsze warunki dojrzewaj\u0105 d\u0142u\u017cej, ale dzi\u0119ki temu maj\u0105 mocniejszy aromat."
+    }
+  }
+]
