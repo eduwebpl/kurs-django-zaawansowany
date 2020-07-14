@@ -4,9 +4,15 @@ from django.db import models
 class ArticleTag(models.Model):
     title = models.TextField()
 
+    def __str__(self):
+        return self.title
+
 
 class Author(models.Model):
     title = models.TextField()
+
+    def __str__(self):
+        return self.title
 
 
 class Article(models.Model):

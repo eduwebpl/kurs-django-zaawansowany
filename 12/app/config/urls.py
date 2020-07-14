@@ -16,10 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from articles.views import ArticleListView, ArticleDetailView
+from articles.views import ArticleListCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('artykuly/', ArticleListView.as_view(), name="article-list"),
-    path('artykuly/<int:pk>/', ArticleDetailView.as_view(), name="article-detail"),
+    path('articles/', ArticleListCreateView.as_view()),
 ]
