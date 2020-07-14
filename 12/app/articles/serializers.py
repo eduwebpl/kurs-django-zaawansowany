@@ -10,9 +10,6 @@ class ArticleTagSerializer(serializers.ModelSerializer):
 
 
 class ArticleSerializer(serializers.ModelSerializer):
-    author = serializers.StringRelatedField()
-    tags = ArticleTagSerializer(many=True)
-
     class Meta:
         model = Article
         fields = ("id", "title", "author", "tags")
