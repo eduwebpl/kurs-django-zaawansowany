@@ -1,3 +1,5 @@
+import time
+
 from django.db import models
 
 
@@ -6,6 +8,11 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def total_articles_count(self):
+        time.sleep(1)
+        return self.article_set.count()
 
 
 class ArticleTag(models.Model):
