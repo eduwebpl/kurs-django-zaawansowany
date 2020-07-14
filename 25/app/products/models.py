@@ -1,7 +1,8 @@
 from django.db import models
+from polymorphic.models import PolymorphicModel
 
 
-class Product(models.Model):
+class Product(PolymorphicModel):
     title = models.TextField()
     price = models.FloatField()
 
