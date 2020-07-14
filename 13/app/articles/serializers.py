@@ -12,4 +12,10 @@ class ArticleTagSerializer(serializers.ModelSerializer):
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ("id", "title", "author", "tags")
+        fields = ("id", "title", "author", "tags", "user")
+        extra_kwargs = {
+            "tags": {
+                "required": False,
+                "allow_empty": True
+            }
+        }
