@@ -15,12 +15,10 @@ class UpdateIndexView(TemplateView):
     template_name = "articles/update_index.html"
 
     def get_context_data(self, **kwargs):
-        updated = 0
-        for article in Article.objects.all():
+        articles_to_update = Article.objects.all()
+        for article in articles_to_update:
             article.update_index()
-            article.save()
-            updated += 1
-
+        Article.objects.bulk_update(articles_to_update, fields=['index_field'])
         return {
-            "count": updated
+            "count": articles_to_update.count()
         }
