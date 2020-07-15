@@ -1,6 +1,7 @@
-from django.http import JsonResponse
-from django.views import View
+from django.db.models import F
 from django.views.generic import ListView, DetailView
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 from articles.models import Article
 
@@ -13,6 +14,7 @@ class ArticleDetailView(DetailView):
     queryset = Article.objects.all()
 
 
-class ArticleListAPIView(View):
+class ArticleListAPIView(APIView):
     def get(self, request, **kwargs):
-        return JsonResponse({})
+        articles = Article.objects.annotate(x=F('title')).values_list('id', 'x')
+        return Response(articles)
