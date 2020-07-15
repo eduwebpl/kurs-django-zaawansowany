@@ -266,7 +266,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env  # comment for course purposes only - you shouldn't .env on repository
 .venv
 env/
 venv/
