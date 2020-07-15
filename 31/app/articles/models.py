@@ -4,6 +4,13 @@ from django.db.models import F
 from core.mixins import CreateModifiedMixin
 
 
+class ArticleTag(models.Model):
+    name = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
 class Author(models.Model):
     name = models.TextField()
 
@@ -17,6 +24,7 @@ class Article(CreateModifiedMixin):
     rating = models.PositiveIntegerField(
         choices=((1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6),)
     )
+    tags = models.ManyToManyField("ArticleTag")
     author = models.ForeignKey(
         "Author",
         related_name="articles",

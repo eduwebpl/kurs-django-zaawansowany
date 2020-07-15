@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from articles.models import Article, Author
+from articles.models import Article, Author, ArticleTag
 
 
 @admin.register(Article)
@@ -10,4 +10,9 @@ class ArticleAdmin(admin.ModelAdmin):
 
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(ArticleTag)
+class ArticleTagAdmin(admin.ModelAdmin):
     pass
