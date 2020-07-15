@@ -21,8 +21,12 @@ class Event(models.Model):
         create instances for dates between events start & end
         """
         self.dates.all().delete()
+        event_dates_to_create = []
         for date in get_dates_for_range(self.date_from, self.date_to):
-            EventDate.objects.create(date=date, event=self)
+            event_dates_to_create.append(
+                EventDate(date=date, event=self)
+            )
+        EventDate.objects.bulk_create(event_dates_to_create)
 
 
 class EventDate(models.Model):
