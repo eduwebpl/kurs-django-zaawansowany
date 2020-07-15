@@ -115,3 +115,10 @@ MEDIA_ROOT = env("MEDIA_ROOT", default=DEFAULT_MEDIA_ROOT)
 
 # Cache configuration
 CACHES = {"default": env.cache(default="dummycache://")}
+
+
+# Email configuration
+EMAIL_CONFIG = env.email_url(
+    'EMAIL_URL', default='smtp://user@:password@localhost:1025')
+
+vars().update(EMAIL_CONFIG)
