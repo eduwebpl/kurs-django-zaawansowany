@@ -19,7 +19,7 @@ from django.urls import path
 from articles.views import ArticleListView, ArticleDetailView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('artykuly/', ArticleListView.as_view(), name="article-list"),
-    path('artykuly/<int:pk>/', ArticleDetailView.as_view(), name="article-detail"),
+    path("admin/", admin.site.urls),
+    path("artykuly/", ArticleListView.as_view(), name="article-list"),
+    path("artykuly/<int:pk>/", ArticleDetailView.as_view(), name="article-detail"),
 ]
