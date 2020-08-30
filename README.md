@@ -1,6 +1,6 @@
 # Kurs Python i Django - Techniki Zaawansowane
 
-To repozytorium zawiera kod źródłowy do kursu [Python i Django - Techniki Zaawansowane](https://eduweb.pl/programowanie-i-www/python/struktura-katalogow) dostępnego w serwisie [eduweb.pl](https://eduweb.pl).
+To repozytorium zawiera kod źródłowy do kursu [Python i Django - Techniki Zaawansowane](https://eduweb.pl/programowanie-i-www/python/python-i-django-techniki-zaawansowane) dostępnego w serwisie [eduweb.pl](https://eduweb.pl).
 
 ### Pobranie repozytorium
 
